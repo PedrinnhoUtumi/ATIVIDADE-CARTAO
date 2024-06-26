@@ -1,0 +1,7 @@
+.cartao {
+    display: flex;
+    width: 30vw;
+    height: 70vh;
+    margin: 1%;
+    flex-direction: column;
+  }
