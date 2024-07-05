@@ -26,6 +26,7 @@ add.addEventListener("click", async () => {
             li.textContent = rep.name
             list_repo.appendChild(li)
         })
+        user.value = ""
     } catch (error) {
         console.error("Perfil não encontrado:", error)
     }
