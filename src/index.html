@@ -5,21 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartões Github</title>
     <link rel="stylesheet" href="output.css">
-    
-
 </head>
 <body>
     <div class="m-5">
-        Nome do usuário <input type="text" name="user" id="user" placeholder="Usuário" class="bg-gray-300 text-black p-1 rounded"> 
+        Nome do usuário: <input type="text" name="user" id="user" placeholder="Usuário" class="bg-gray-300 text-black p-1 rounded"> 
         <button class="bg-purple-700 text-white p-1 rounded" id="adicionar">Adicionar</button>
     </div>
-    <div class="bg-white w-80 rounded flex items-center justify-center flex-col border border-solid shadow h-[80vh] m-10">
-        <div class="bg-[url('./fundo.jpeg')] w-full h-40 bg-cover relative bottom-24" id="plano_fundo"></div>
-        <img src="./perfil.png" id="perfil" class="w-24 h-24 bg-white border rounded-full relative bottom-1/3">
-        <p class="relative bottom-40" id="nome_user">Nome</p>
-        <p class="relative bottom-40" id="email_user">Gmail@gmail.com</p>
-        <h4 class="relative bottom-28">Repositórios</h4>    
+    <br>
+    <br>
+    <br>
+    <div class="bg-white w-80 rounded flex items-center justify-center flex-col border border-solid shadow h-[70vh] m-10" id="cartao">
+        <div class="bg-[url('./fundo.jpeg')] w-full h-40 bg-cover mt-[-180px]" id="plano_fundo"></div>
+        <img src="./perfil.png" id="perfil" class="w-24 h-24 bg-white border rounded-full mt-[-48px]">
+        <p id="nome_user" class="mt-0">Nome</p>
+        <p id="email_user" class="mt-0">Gmail@gmail.com</p>
+        <h4 class="mt-[40px]">Repositórios</h4>    
+        <ul id="repo_list" class="mt-2 w-36 h-40 overflow-y-scroll"></ul>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
