@@ -11,7 +11,6 @@ add.addEventListener("click", async () => {
     try {
         const response = await axios.get(`https://api.github.com/users/${user.value}`)
         let info = response.data
-        console.log(info)
         let name_git = info.name
         let email_git = info.email
         let new_profile = info.avatar_url
@@ -20,7 +19,6 @@ add.addEventListener("click", async () => {
         profile.src = new_profile
         const repository = await axios.get(`https://api.github.com/users/${user.value}/repos`)
         let repo = repository.data 
-        console.log(repo)
         list_repo.innerHTML = ""
         repo.forEach(rep => {
             const li = document.createElement("li")
